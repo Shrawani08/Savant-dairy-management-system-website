@@ -1,0 +1,369 @@
+<div class="form-group">
+<label for="subcategory">Select Subcategory</label>
+<select name="subcategory" id="subcategory" class="form-control">
+    <option value="">Select Subcategory</option>
+    <?php
+    $qury = "select * from subcategory";
+    $res = mysqli_query($conn,$qury);
+    while ($subcategory= mysqli_fetch_assoc($res)){
+        ?>
+        <option value="<?php echo $row['subcategoryid']; ?>"
+        <?php if (($rowcat['subcategoryid']) == $rowcat['subcategoryid']) { ?>selected<?php } ?>> <?php echo $rowcat['subcategoryname']; ?> </option>
+        <?php
+        }
+        ?>
+</select>
+</div>
+
+
+
+
+<!-- <option value="<?php echo $rowcat['categories'] ?>"><?php echo $rowcat['categories'] ?></option> -->
+
+
+
+
+
+
+<label for="categories">Categories</label>
+                    <select required name="categories" id="categories" class="form-control" onchange="getcat(this.value)">
+                        <option value="">Select Categories</option>
+                    <?php
+                        include_once "connection.php";
+                        $selectcategories = "select * from categories";
+                        $categoriesData = mysqli_query($con, $selectcategories);
+                        while ($rowcat = mysqli_fetch_assoc($categoriesData)) {
+							?>
+
+                            <option value="<?php echo $row['categories']; ?>"
+
+                            <?php if (($rowcat['categories']) == $rowcat['categories']) { ?>selected<?php } ?>> <?php echo $rowcat['categories']; ?> </option>
+							<?php
+					     }
+					?>
+					</select>
+                </div>		
+
+                <div class="form-group">
+                    <label for="subcategory">Select Subcategory</label>
+                    <select name="subcategory" id="subcategory" class="form-control">
+                        <option value="">Select Subcategory</option>
+                    <?php
+                        include_once "connection.php";
+                        $selectsubcategories = "select * from subcategory";
+                        $subcategoriesdata = mysqli_query($conn,$selectsubcategories);
+                        while ($subcategory= mysqli_fetch_assoc($subcategoriesdata)){
+                            ?>
+
+                            <option value="<?php echo $row['subcategoryid']; ?>"
+
+                            <?php if ($subcategory['subcategoryid'] == $subcategory['subcategoryid']) { ?>selected<?php } ?>> <?php echo $subcategory['subcategoryname']; ?> </option>
+                            <?php
+                            }
+                            ?>
+                    </select>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row input-container">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="category" class="">Category</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select name="categories" class="input-field" id="categories" onchange="getcat(this.value)">
+                            <option value="">Select Category</option>
+                            <?php
+                            $qury="select categories from categories";
+                            $res = mysqli_query($conn,$qury);
+                            while ($categories = mysqli_fetch_assoc($res)){
+                                ?>
+                                <option value="<?php echo $categories['categories']; ?>"
+                                    <?php if (($row['categories']) == $categories['categories']) { ?>selected<?php } ?>><?php echo $categories['categories']; ?></option>
+                                    <?php
+                            }
+                            ?>
+                            </select>
+                        </div>
+                        </div>
+                        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+
+
+
+  data-toggle="modal" data-target="#myModal"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title" id="admintitle">Apply For Admin</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <form action="applyadmin.php" id="adminsignup" method="post" enctype="multipart/form-data">
+      <div class="modal-body">
+          <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="form-group">
+                    <label for="phonenumber">Mobile No</label>
+                    <input type="text" data-rule-required="true" data-rule-number="true" minlength="10" maxlength="10" name="phonenumber" id="phonenumber" name="phonenumber" class="form-control" placeholder="Enter Your Phone Number">
+                </div>
+            <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" data-rule-required="true" name="name" id="name" class="form-control" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div>
+                        <input name="gender" type="radio" checked name="gender" id="male" value="Male"> <label for="male">Male</label>
+                        <input name="gender" type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" data-rule-required="true"  data-msg-required="Please Enter Email" data-msg-email="Invalid Email id" name="email" id="email" class="form-control" placeholder="Enter Your Email">
+                </div> 
+                <div class="form-group">
+                    <label for="name">Country</label>
+                    <input type="text" data-rule-required="true" name="country" id="country" class="form-control" placeholder="Enter Your Country Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">State</label>
+                    <input type="text" data-rule-required="true" name="state" id="state" class="form-control" placeholder="Enter Your State">
+                </div>
+                <div class="form-group">
+                    <label for="name">City</label>
+                    <input type="text" data-rule-required="true" name="city" id="city" class="form-control" placeholder="Enter Your State">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+ </nav>
+</div>
+<?php
+      include_once "footerfiles.php";
+      ?>
+  <script>
+    $(document).ready(function () {
+        $('form').validate();
+
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+=================================================
+
+
+adminhome1 old
+
+
+<!doctype html>
+<html class="no-js" lang="">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="AdditionalFiles/css/styleee.css">
+      <link rel="stylesheet" href="AdditionalFiles/css/bootstrap.min.css">
+      <?php
+      include_once "headerfiles.php";
+      ?>
+      <style>
+#admintitle{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  padding: 10px;
+  font-style: solid;
+  font-weight: bolder;
+
+}
+</style>
+</head>
+<body class="bg-dark" >
+    <div class="wrapper">
+        <nav id="navbar">
+     <div id="logo">
+         <img src="logo.png" alt="apnakiryana.com">
+     <ul class="menuoptions">
+         <li class="item"><a data-toggle="modal" data-target="#myModal"><b>Apply For Admin</b></a></li>
+     </ul>
+</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title" id="admintitle">Apply For Admin</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <form action="applyadmin.php" id="adminsignup" method="post" enctype="multipart/form-data">
+      <div class="modal-body">
+          <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="form-group">
+                    <label for="phonenumber">Mobile No</label>
+                    <input type="text" data-rule-required="true" data-rule-number="true" minlength="10" maxlength="10" name="phonenumber" id="phonenumber" class="form-control" placeholder="Enter Your Phone Number">
+                </div>
+            <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" data-rule-required="true" name="name" id="name" class="form-control" placeholder="Enter Your Phone Name">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" checked name="gender" id="male" value="Male"> <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" data-rule-required="true"  data-msg-required="Please Enter Email" data-msg-email="Invalid Email id" name="email" id="email" class="form-control" placeholder="Enter Your Email">
+                </div> 
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+ </nav>
+</div>
+<?php
+      include_once "footerfiles.php";
+      ?>
+<script>
+    $(document).ready(function () {
+        $('form').validate();
+
+    })
+</script>
+ </body>
+</html>
+
+
+
+
+
+
+
+            <select required name="categories" id="categories" class="form-control">
+                <option value="">Select Category</option>
+                <?php
+                $selectcat = "select * from categories";
+                $catData = mysqli_query($con, $selectcat);
+                while ($rowcat = mysqli_fetch_assoc($catData)) {
+
+                    ?>
+                    <option <?php if ($rowcat['categories'] == $rowid['categories']) {
+                        echo 'selected';
+                    } ?> value="<?php echo $rowcat['categories'] ?>"><?php echo $rowcat['categories'] ?></option>
+                    <?php
+                }
+                ?>
+            </select>
+
+
+
+
+
+
+
+            <?php
+session_start();
+?>
+<?php
+include_once "connection.php";
+if (isset($_GET['categories'])) {
+    $categories= $_GET['categories'];
+    $selectid = "select subcategoryid from subcategory where `categories`='$categories'";
+    $selectproducts = "select productid from product where subcategoryid='$selectid'";
+    $idData = mysqli_query($con, $selectproducts);
+    // $rowid = mysqli_fetch_assoc($idData);
+
+} else {
+    header('location:userhome.php');
+}
+
+?>

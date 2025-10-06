@@ -1,0 +1,165 @@
+.grid{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    'box1  box2 ' 
+    ;
+    margin-bottom: 20px;
+  }
+  
+  .box1{
+    grid-area: box1;
+    color: #ffffff;
+     border: 5px solid white;
+     width: 100%;
+     padding: auto 100px;
+     border-radius: 15px;
+     
+  
+  
+  }
+  
+  .box2{
+    grid-area: box2;
+    color: #ffffff;
+    border: 5px solid white;
+    width: 100%;
+     padding: auto 100px;
+     border-radius: 15px;
+     
+  }
+  
+  #maincard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'card1 card2 card3'
+      'card4 card5 card6'
+      ;
+  }
+  
+  #card1{
+      grid-area: card1;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  #card2{
+      grid-area: card2;
+      justify-content: center;
+      text-align: center;
+  }
+  #card3{
+      grid-area: card3;
+      justify-content: center;
+      text-align: center;
+  
+  }
+  
+  #card4{
+      grid-area: card4;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  #card5{
+      grid-area: card5;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  #card6{
+      grid-area: card6;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  @media(max-width: 1200px){
+      #maincard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      ;
+  }
+  }
+  
+  @media(max-width: 800px){
+      #maincard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'card1' 
+      'card2'
+      'card3'
+      'card4'
+      'card5' 
+      'card6'
+      ;
+  }
+  }
+  
+  #subcard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'scard1 scard2 scard3 scard4'
+      ;
+  }
+  
+  #scard1{
+      grid-area: scard1;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+  }
+  #scard2{
+      grid-area: scard2;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+  
+  }
+  
+  #scard3{
+      grid-area: scard3;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+  
+  }
+  
+  #scard4{
+      grid-area: scard4;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      align-items: center;
+  }
+  
+  
+  @media(max-width: 1200px){
+      #subcard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'scard1 scard2'
+      'scard3 scard4'
+      ;
+  }
+  }
+  
+  @media(max-width: 800px){
+      #subcard{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: 
+      'scard1' 
+      'scard2'
+      'scard3'
+      'scard4'
+      ;
+  }
+  }

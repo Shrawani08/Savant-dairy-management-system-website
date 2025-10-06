@@ -1,0 +1,279 @@
+signup.php executed
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Vedika
+    [email] => vedika19@gmail.com
+    [phoneNo] => 746235565611
+    [password] => Vedika
+    [cpassword] => Vedika
+    [submitreg] => register
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Mansi
+    [email] => mansi@gmail.com
+    [phoneNo] => 2424432777
+    [password] => mansi123@
+    [cpassword] => mansi123@
+    [submitreg] => register
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Vedika
+    [email] => vedika19@gmail.com
+    [phoneNo] => 38766554431
+    [password] => Vedika19@
+    [cpassword] => Vedika19@
+    [submitreg] => register
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Vedika
+    [email] => vedika19@gmail.com
+    [phoneNo] => 38766554431
+    [password] => Vedika19@
+    [cpassword] => Vedika19@
+)
+
+Received request: Array
+(
+    [username] => Vedika
+    [email] => vedika19@gmail.com
+    [phoneNo] => 3876655443
+    [password] => Vedika19@
+    [cpassword] => Vedika19@
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => surekha
+    [email] => surekha21@gmail.com
+    [phoneNo] => 2324242201
+    [password] => Surekha123@
+    [cpassword] => Surekha123@
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Lalita
+    [email] => lalita01@gmail.com
+    [phoneNo] => 3528578870
+    [password] => Lalita@01
+    [cpassword] => Lalita@01
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Sneha
+    [email] => sneha@gmail.com
+    [phoneNo] => 4326665656
+    [password] => Sneha@123
+    [cpassword] => Sneha@123
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => anushka
+    [email] => anushka24@gmail.com
+    [phoneNo] => 8747653221
+    [password] => Anu@123
+    [cpassword] => Anu@123
+)
+
+Received request: Array
+(
+    [username] => anushka
+    [email] => anushka24@gmail.com
+    [phoneNo] => 8747653221
+    [password] => Anu@123
+    [cpassword] => Anu@123
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => tushar
+    [email] => tushar@gmail.com
+    [phoneNo] => 8393262770
+    [password] => Tushar@123
+    [cpassword] => Tushar@123
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Darshita
+    [email] => darshita123@gmail.com
+    [phoneNo] => 4346570699
+    [password] => Darshita@123
+    [cpassword] => Darshita@123
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Anushka Chavan
+    [email] => anushkac@gmail.com
+    [phoneNo] => 9865432172
+    [password] => S08D31more@
+    [cpassword] => S08D31more@
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Heena
+    [email] => heena32@gmail.com
+    [phoneNo] => 3827676776
+    [password] => S08D31more@
+    [cpassword] => S08D31more@
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+    [username] => Jasmine
+    [email] => jasmine123@gmail.com
+    [phoneNo] => 2493988866
+    [password] => Jasmine@123
+    [cpassword] => Jasmine@123
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
+Received request: Array
+(
+)
+
