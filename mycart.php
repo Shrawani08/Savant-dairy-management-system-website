@@ -201,7 +201,7 @@ if (isset($_SESSION['username'])) {
     <div class="checkout-left">
             <div class="address_form_agile mt-sm-5 mt-4">
                 <h4 class="mb-sm-4 mb-3">Add a new Details</h4>
-                <form action="insertPayment.php" method="post" id="checkoutForm"
+                <form action="insertpayment.php" method="post" id="checkoutForm"
                       class="creditly-card-form agileinfo_form">
                     <div class="creditly-wrapper wthree, w3_agileits_wrapper">
                         <div class="information-wrapper">
