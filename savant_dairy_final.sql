@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `savant_dairy`
+-- Database: `savantdairy`
 --
-CREATE DATABASE IF NOT EXISTS `savant_dairy` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `savant_dairy`;
+CREATE DATABASE IF NOT EXISTS `savantdairy` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `savantdairy`;
 
 -- --------------------------------------------------------
 
